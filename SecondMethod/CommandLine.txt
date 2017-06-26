@@ -1,0 +1,14 @@
+cd /usr/local/hadoop-0.20.2
+javac -classpath hadoop-0.20.2-core.jar -d midEx_classes Midterm/*.java
+jar cvf midtermexam.jar -C midEx_classes/ .
+bin/hadoop jar MidtermExam.jar Cloud.Iliad.MidtermExam1 midtermInput
+
+
+int to string:Integer.toString(num)
+
+double total = 44;
+String total2 = String.valueOf(total);
+
+String hoursrminfield; // you better declare any variable you are using
+// wrap hours in a Double, then use toString() on that Double
+hoursminfield = Double.valueOf(hours).toString();
